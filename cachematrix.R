@@ -44,7 +44,8 @@ cacheSolve <- function(x, ...) {
         }
         data <- x$get()
         m <- mean(data, ...)
-
+        x$setmean(m)
+        m
 
 
 
